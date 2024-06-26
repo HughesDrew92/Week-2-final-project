@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  padding: 32px;
+}
+
+.purple {
+  color: #6415ff;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.nav__left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-weight: 900;
+  font-size: 24px;
+  text-decoration: none;
+  color: #243e63;
+  margin: 8px 0;
+  padding: 0 0 4px;
+}
+
+.menu__right {
+  position: relative;
+}
+
+.nav__logo--wrapper {
+  width: 40px;
+  height: 40px;
+}
+
+.nav__logo-img {
+  width: 100%;
+  margin: 0 12px 0 0;
+}
+
+.menu__right-pop,
+.menu__right-login,
+.menu__right-signup {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.menu__right-pop {
+  padding: 0 0 4px;
+  margin: 0 24px;
+  color: #243e63;
+}
+
+.menu__right-login {
+  margin: 0 24px 0 48px;
+  padding: 0 0 4px;
+  color: #243e63;
+}
+
+.menu__right-signup {
+  padding: 12px 32px;
+  background-color: #6415ff;
+  color: #f7fafc;
+  border-radius: 9999px;
+}
+
+/* BANNER */
+
+.banner {
+  position: relative;
+}
+
+.banner__container {
+  display: flex;
+  flex-direction: row;
+  padding: 96px 0;
+  margin: 0 80px;
+  align-items: center;
+  max-width: 1200px;
+}
+
+.banner__tag {
+  width: 40%;
+  max-width: none;
+  text-align: left;
+  position: relative;
+}
+
+.tag {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.tag__para {
+  margin: 32px 0;
+  text-align: left;
+  font-size: 18px;
+}
+
+.email {
+  max-width: 28rem;
+  position: relative;
+  text-align: center;
+}
+
+.email__area {
+  padding: 20px 192px 20px 32px;
+  background-color: #ffffff;
+  border-style: solid;
+  border-radius: 9999px;
+  border-width: 2px;
+  font-size: 100%;
+  font-weight: 500;
+  opacity: 0.5;
+  width: 100%;
+}
+
+.email__area-button {
+  position: absolute;
+  background-color: #6415ff;
+  color: #f7fafc;
+  border-radius: 9999px;
+  font-size: inherit;
+  cursor: pointer;
+  font-weight: 700;
+  width: 160px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  padding: 16px 0;
+  margin: 8px 8px 8px 0;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.tag__cust {
+  margin-top: 80px;
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+.tag__cust-img {
+  max-width: 100%;
+  margin-top: 16px;
+  padding-right: 128px;
+}
+
+.banner-picture {
+  width: 60%;
+}
+
+.banner__picture-wrapper {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
