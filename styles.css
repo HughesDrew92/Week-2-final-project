@@ -158,9 +158,11 @@ body {
 }
 
 .tag__cust-img {
-  max-width: 100%;
+  width: 100%;
   margin-top: 16px;
   padding-right: 128px;
+  height: auto;
+  display: block;
 }
 
 .banner-picture {
@@ -171,4 +173,49 @@ body {
   position: relative;
   height: auto;
   width: 100%;
+}
+
+
+/* FEATURES */
+
+
+.features__container{
+    position: relative;
+    padding: 80px 0;
+}
+
+.features__row{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto 0;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+
+.features__row-title{
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: inherit;
+    text-align: center;
+}
+
+.features__row-title-tag{
+    width: 100%;
+    font-size: 48px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.features__row-title-para{
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    color: rgb(124, 139, 161);
+    margin-top: 16px;
+    max-width: 36rem;
 }
