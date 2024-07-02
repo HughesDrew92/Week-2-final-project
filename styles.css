@@ -587,10 +587,9 @@ p{
 
 .pricing__options-wrapper{
     position: relative;
-    display: flex;
-    flex-direction: row;
+    display: flex;   
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: stretch;
 }
 
 .pricing__options{
@@ -601,10 +600,10 @@ p{
     margin-top: 64px;
     margin-right: 32px;
     padding: 8px 32px 0px 32px;
-    width: 100%;
-    max-width: 384px;
+    width: 30%;
     border-radius: .5rem;
-}
+    box-shadow: 0 1px 3px  rgba(0, 0,0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+   }
 
 .pricing__option-top{
     position: absolute;
@@ -649,6 +648,8 @@ p{
     display: flex;
     flex-direction: column;
     flex: 1 1 0%;
+    border-top: 2px solid rgb(203, 213, 224);
+    border-bottom: 2px solid rgb(203, 213, 224);  ;    
 }
 
 .plan__target{
@@ -665,7 +666,7 @@ p{
 }
 
 .pricing__button{
-    padding: 32px 64px;
+   padding: 32px 64px;
 }
 
 .buy__now{
@@ -680,4 +681,199 @@ p{
     font-size: 14px;
     padding: 16px 32px;
     border: none;
+}
+
+.pricing__option-top-red{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+.buy__now-red{
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+    text-transform: uppercase;
+    width: 100%;
+    border-radius: 9999px;
+    cursor: pointer;
+    color: rgb(247, 250, 252);
+    font-weight: 700;
+    letter-spacing: .7px;
+    font-size: 14px;
+    padding: 16px 32px;
+    border: none;
+}
+
+.pricing__options-blue{
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    width: 30%;
+    margin-top: 64px;
+    margin-right: 32px;
+    padding: 8px 32px 0px 32px;
+    background-color: rgb(100, 21, 255);
+    color: rgb(247, 250, 252);
+    background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102,126, 234) 100%);
+    border-radius: 8px;
+    }
+
+.pricing__option-type-blue{
+    flex-direction: column;
+    display: flex;
+    padding: 32px 0px;
+    text-transform: uppercase;
+
+}
+
+.duration-blue{
+    font-weight: 700;
+    letter-spacing: 1.6px;
+}
+
+.target-blue{
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.feature-blue{
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.buy__now-blue{
+    background-color: rgb(247, 250, 252);
+    padding: 16px 32px;
+    border-radius: 9999px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    letter-spacing: .7px;
+    color: rgb(100, 21, 255);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* TESTIMONIALS */
+
+.testimonials__container{
+    position: relative;
+}
+
+.testimonials__row{
+    padding: 96px 0px;
+    max-width: 1200px;
+}
+
+.testimonials__wrapper{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testimonials__img{
+    position: relative;
+    max-width: none;
+    width: 50%;
+}
+
+.testimonials__img-img{
+    height: auto;
+    max-width: 100%;
+}
+
+.testimonials__para{
+    padding-left: 64px;
+    margin-top: 0px;
+    order: 9999;
+    width: 50%;
+}
+
+.testimonials__review-wrapper{
+    width: 100%;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.testimonials__review{
+    height: 100%;
+    width: 100%;
+  
+}
+
+.fa-star{
+    margin-right: 4px;
+    height: 20px;
+    width: 20px;
+    color: rgb(246, 173, 85);
+}
+
+.testimonials__review-title{
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.testimonials__review-review{
+   margin-bottom: 40px;
+    font-weight: 500;
+    color: rgb(74, 85, 104);
+    margin-top: 16px;
+}
+
+.testimonials__review-user{
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testimonials__review-user-char{
+   display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.char__img{
+    height: 80px;
+    border-radius: 9999px;
+}
+
+.testimonials__review-user-char-name{
+    text-align: left;
+    margin-left: 24px;
+    
+}
+
+.char{
+    color: inherit;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.testimonials__review-user-buttons{
+    display: flex;
+}
+
+.left__button,
+.right__button{
+    margin: 0 12px;
+    padding: 16px;
+    border: none;
+    border-radius: 9999px;
+    color: rgb(100, 21, 255);
+    cursor: pointer;
+}
+
+.divider{
+    border-right: 1px solid rgb(226, 232, 240);
+    margin: 12px 0px;
 }
