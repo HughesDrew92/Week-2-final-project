@@ -2,7 +2,7 @@
 
 * {
   box-sizing: border-box;
-  margin: auto 0;
+  margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
   line-height: 1.5;
@@ -41,17 +41,17 @@ p{
 
 .nav__container {
     display: flex;    
-    align-items: center; 
+     margin: auto;
     max-width: 1200px;  
     justify-content: space-between;
 }
 
 .desktop {
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  flex: 1 1 0%;
   width: 100%;
+  
   
   
 }
@@ -77,6 +77,7 @@ p{
   width: 100%;
   margin: 0 12px 0 0;
 }
+
 
 .menu__right-pop,
 .menu__right-login,
@@ -114,6 +115,7 @@ p{
 .banner__row {
   display: flex;
   flex-direction: row;
+  margin: auto;
   padding: 96px 0;
    align-items: center;
   max-width: 1200px;
@@ -214,6 +216,7 @@ p{
     align-items: center;
     justify-content: center;
     padding: 96px 0px;
+    margin: auto;
 }
 
 
@@ -298,6 +301,7 @@ p{
     align-items: center;
     justify-content: space-between;
     max-width: 1200px;
+    margin: auto;
 }
 
 .quality__pic{
@@ -361,6 +365,7 @@ p{
     justify-content: center;
     padding: 96px 0px;
     max-width: 1200px;
+    margin: auto;
 }
 
 .started__pic{
@@ -451,6 +456,7 @@ p{
     justify-content: space-between;
     flex-direction: row;
     padding: 96px 0px;
+    margin: auto;
 }
 
 .values__pic{
@@ -565,6 +571,7 @@ p{
 .pricing__row{
     max-width: 1200px;
     padding: 96px 0px;
+    margin: auto;
 }
 
 .pricing__title-wrapper{
@@ -769,6 +776,7 @@ p{
 .testimonials__row{
     padding: 96px 0px;
     max-width: 1200px;
+    margin: auto;
 }
 
 .testimonials__wrapper{
@@ -876,4 +884,265 @@ p{
 .divider{
     border-right: 1px solid rgb(226, 232, 240);
     margin: 12px 0px;
+}
+
+
+/* FAQS */
+
+
+.questions__container{
+    position: relative;
+}
+
+.questions__row{
+    padding: 96px 0px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.questions__wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.questions__title{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.questions__header{
+    text-align: center;
+}
+
+.questions__para{
+    text-align: center;
+    width: 100%;
+    margin-top: 16px;
+    max-width: 576px;
+}
+
+.questions__dropdown-wrapper{
+    position: relative;
+    margin-top: 48px;
+    width: 100%;
+    max-width: 896px;
+}
+
+.questions__dropdown{
+    margin-top: 20px;
+    padding: 16px 40px;
+    background-color: rgb(237, 242, 247);
+    color: rgb(45, 55, 72);
+    border-radius: 8px;
+}
+
+.questions__dropdown-question-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+.questions__dropdown-question{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.questions__dropdown-arrow{
+    margin-left: 8px;
+}
+
+.questions__dropdown-answer{
+    height: auto;
+    margin-top: 16px;
+}
+
+/* QUICK CONTACT */
+
+.qc__container{
+    position: relative;
+    margin-bottom: 96px;
+}
+
+.qc__row{
+    margin: auto;
+    max-width: 1200px;
+    padding: 96px 0;
+}
+
+.qc__wrapper{
+    position: relative;
+    background-color: rgb(100, 21, 255);
+    padding: 96px 0;
+    border-radius: 8px;
+}
+
+.qc__content{
+    position: relative;
+    flex-direction: row;
+    text-align: left;
+    z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    max-width: 1024px;
+    padding: 0 32px;
+    align-items: center;
+}
+
+.qc__content-header{
+    width: 50%;
+    max-width: 512px;
+}
+
+.qc__header{
+    color: rgb(247, 250, 252);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.qc__content-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 0px;
+    width: 50%;
+    max-width: 512px;
+}
+
+.qc__get-started{
+    background-color: rgb(245, 101, 101);
+    color: rgb(247, 250, 252);
+    margin-right: 32px;
+    padding: 20px 40px;
+    width: auto;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 9999px;    
+}
+
+.qc__contact-us{
+    padding: 20px 40px;
+    border-radius: 9999px;
+    border: 1px solid rgba(160, 174, 192, 1);
+    color: rgb(247, 250, 252);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* FOOTER */
+
+.footer__container{
+    position: relative;
+    padding: 96px 32px;
+    margin-right: -32px;
+    margin-left: -32px;
+    margin-bottom: -32px;
+    background-color: rgb(100, 21, 255);
+}
+
+.footer__row{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+   
+}
+
+.footer__wrapper{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -48px;
+    flex-wrap: wrap;
+    
+}
+
+.footer__sections{
+    margin-top: 48px;
+}
+
+.footer__sections-title{
+    color: rgb(226, 232, 240);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: normal;
+}
+
+.footer__sections-choices{
+    margin: 0px;
+    margin-top: 24px;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footer__choice{
+    margin-top: 12px;
+}
+
+.footer__anchor{
+    text-decoration: none;
+    color: rgb(226, 232, 240);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footer__divider{
+    border: solid;
+    margin: 64px 0;
+    width: 100%;
+    border-bottom-width: px;
+    border-color: rgb(116, 44, 255);
+}
+
+.footer__end{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.footer__end-logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer__logo-img{
+    width: 32px;
+}
+
+.footer__end-title{
+    color: rgb(247, 250, 252);
+    margin-left: 8px;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: normal;
+}
+
+.footer__copyright{
+    text-align: center;
+    color: rgb(203, 213, 224);
+}
+
+.footer__social{
+    display: flex;
+    margin-top: 0px;
+}
+
+.footer__links{
+    margin-right: 16px;
+    padding: 8px;
+    color: black;
+    background-color: rgb(247, 250, 252);
+    border-radius: 9999px;
+}
+
+.footer__links:last-child{
+    margin-right: 0px;
 }
